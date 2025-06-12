@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atajos SOC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="input">
+    <input type="checkbox" id="lock"/>
+    <label for="lock" class="lock-label">
+      <span class="lock-wrapper">
+        <span class="shackle"></span>
+        <svg class="lock-body" width="" height="" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5C0 2.23858 2.23858 0 5 0H23C25.7614 0 28 2.23858 28 5V23C28 25.7614 25.7614 28 23 28H5C2.23858 28 0 25.7614 0 23V5ZM16 13.2361C16.6137 12.6868 17 11.8885 17 11C17 9.34315 15.6569 8 14 8C12.3431 8 11 9.34315 11 11C11 11.8885 11.3863 12.6868 12 13.2361V18C12 19.1046 12.8954 20 14 20C15.1046 20 16 19.1046 16 18V13.2361Z" fill="white"
+          ></path>
+        </svg>
+      </span>
+    </label>
+</div>
+  <div class="container">
+    <h1>Atajos SOC</h1>
+    <h3>Suma, análisis de IPs y anonimización de URLs</h3>
+    <textarea id="atajoInput" placeholder="Ingresa un número de caso, múltiples direcciones IP, o URLs separadas por comas o saltos de línea"></textarea>
+    <div class="buttons">
+      <button id="btnSumar" type="button">Sumar</button>
+      <button id="btnAnonimizar">Anonimizar</button>
+    </div>
+    <div class="buttons animated none" id="none">
+      <button id="btnRestar" type="button">Restar</button>
+      <button id="btnDesanonimizar" type="button">Desanon.</button>
+    </div>
+    <button id="btnCheckIP" type="button">Analizar IOCs</button>
+    <div class="div-result">
+      <p id="result" class="result"></p>
+    </div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
