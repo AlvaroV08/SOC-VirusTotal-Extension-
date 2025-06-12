@@ -1,1 +1,0 @@
-export const apiKey = '...';//Ingrese su API de VirusTotal  
